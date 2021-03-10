@@ -1,6 +1,9 @@
 import { addMedia } from "../utils/media-utils";
 import { ObjectContentOrigins } from "../object-types";
 
+//trigger定義の追加先
+import { triggeredFunctions } from "../triggeredFunctions";
+
 // WARNING: This system mutates interaction system state!
 export class SuperSpawnerSystem {
   maybeSpawn(state, grabPath) {
@@ -13,15 +16,51 @@ export class SuperSpawnerSystem {
         ? window.APP.hubChannel.can("spawn_emoji")
         : window.APP.hubChannel.can("spawn_and_move_media"));
 
+
+
+    let isScriptTrigger = false;
+	  if(superSpawner)
+	  {
+		  if(state.hovered.object3D.name.indexOf('script') !== -1)
+		  {
+			  isScriptTrigger = true;
+		  }
+	  }
+
+			         
+
     if (
       superSpawner &&
       superSpawner.spawnedMediaScale &&
       !superSpawner.cooldownTimeout &&
       userinput.get(grabPath) &&
-      isPermitted
+      isPermitted &&
+      !isScriptTrigger
     ) {
       this.performSpawn(state, grabPath, userinput, superSpawner);
     }
+
+    else if(
+	          superSpawner &&
+	          superSpawner.spawnedMediaScale &&
+	          !superSpawner.cooldownTimeout &&
+	          userinput.get(grabPath) &&
+	          isPermitted &&
+	          isScriptTrigger
+	        ){
+	          // trigger function
+	    if(state.hovered.object3D.name.indexOf('hacaro_black') !== -1)
+	    {
+	      triggeredFunctions.hacaroBlackClick();
+	    }
+	    else if(state.hovered.object3D.name.indexOf('hacaro_blue') !== -1)
+	    {
+	      triggeredFunctions.hacaroBlueClick();
+	    }
+    }
+
+
+
   }
 
   performSpawn(state, grabPath, userinput, superSpawner) {
