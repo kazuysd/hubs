@@ -1,42 +1,60 @@
+import { JSFrame } from 'jsframe.js';
+
 export class triggeredFunctions{
 
 
-
 static hacaroBlackClick() {
-	        
-	        var el = document.getElementById("product_dialog_product_name");
-	        if(!el)
-		        {
-				         
-				            localStorage.setItem('product-name','VOiCE');
-				            localStorage.setItem('product-id','5');
-				            localStorage.setItem('product-info','');
-				            localStorage.setItem('product-genre','');
-				            localStorage.setItem('product-price','');
-				            localStorage.setItem('product-status','');
-				            localStorage.setItem('product-script-src', 'https://platform.voice-doujin.space');
+	    
+	            const jsFrame = new JSFrame();
+	            const align = 'CENTER_CENTER';//アンカー
+	            const x = window.innerWidth / 2;
+	            const y = window.innerHeight / 2;
+	            const frame = jsFrame.create({
+			  title: 'ウィンドウ',
+			  left: 20, 
+			  top: 20, 
+			  width: 320, 
+			  height: 220,
+			  movable: true,//マウスで移動可能
+			  resizable: true,//マウスでリサイズ可能
+			  html: '<div id="my_element" style="padding:10px;font-size:12px;color:darkgray;">Contents of window</div>'
+			            });
 
-				            document.querySelectorAll('[class*=product-button]')[0].click();
-				        }
+                    
+
+                    frame.setPosition(x, y, align);  
+	            frame.show();
+	            setTimeout(() => {
+	            frame.$('#my_element').innerHTML = '<span style="color:red">Hello world</span>';
+	                                                               }, 1000);
+	      
+
+
 	    }
 
     static hacaroBlueClick() {
+                   const jsFrame = new JSFrame();
+	                        const align = 'CENTER_CENTER';//アンカー
+	                        const x = window.innerWidth / 2;
+	                        const y = window.innerHeight / 2;
+	                        const frame = jsFrame.create({
+				 title: 'ウィンドウ',
+	                          width: 640,
+				height: 560,
+				movable: true,//マウスで移動可能
+				resizable: true,//マウスでリサイズ可能
+				url: 'https://platform.voice-doujin.space/event/fleamarket',//iframe内に表示するURL
+				urlLoaded: (_frame) => {}
+	                                                    });
+					
+	                       frame.setPosition(x, y, align);
+		               frame.show();
+		     		setTimeout(() => {
+					                                                                                                                                              frame.$('#my_element').innerHTML = '<span style="color:red">Hello world</span>';
+		                                  }, 1000);
+
+
+    }
 	            
-	            var el = document.getElementById("product_dialog_product_name");
-	            if(!el)
-		            {
-				                
-				                localStorage.setItem('product-name','測定ベルト（Qualityベルトブルー）');
-				                localStorage.setItem('product-id','6');
-				                localStorage.setItem('product-info','');
-				                localStorage.setItem('product-genre','');
-				                localStorage.setItem('product-price','');
-				                localStorage.setItem('product-status','');
-				                localStorage.setItem('product-script-src', 'https://digista.shop-pro.jp/?mode=cartjs&pid=152183768&style=normal_gray&name=n&img=y&expl=y&stock=y&price=y&optview=n&inq=n&sk=n');
-
-				                document.querySelectorAll('[class*=product-button]')[0].click();
-				            }
-	        }
-
 
 }
