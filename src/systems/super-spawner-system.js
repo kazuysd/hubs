@@ -45,7 +45,7 @@ export class SuperSpawnerSystem {
 	          superSpawner.spawnedMediaScale &&
 	          !superSpawner.cooldownTimeout &&
 	          userinput.get(grabPath) &&
-	          isPermitted &&
+	//          isPermitted &&
 	          isScriptTrigger
 	        ){
 	          // trigger function
@@ -56,7 +56,22 @@ export class SuperSpawnerSystem {
 	    else if(state.hovered.object3D.name.indexOf('hacaro_blue') !== -1)
 	    {
 	      triggeredFunctions.hacaroBlueClick();
-	    }
+      }
+      else if (state.hovered.object3D.name.indexOf('stage01') !== -1) {
+          triggeredFunctions.stage01Click();
+      }
+      else if (state.hovered.object3D.name.indexOf('stage02') !== -1) {
+          triggeredFunctions.stage02Click();
+      }
+      else if (state.hovered.object3D.name.indexOf('stage03') !== -1) {
+          triggeredFunctions.stage03Click();
+      }
+      else if (state.hovered.object3D.name.indexOf('stage04') !== -1) {
+          triggeredFunctions.stage04Click();
+      }
+      else if (state.hovered.object3D.name.indexOf('stage05') !== -1) {
+          triggeredFunctions.stage05Click();
+      }
     }
 
 
