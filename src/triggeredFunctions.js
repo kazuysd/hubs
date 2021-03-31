@@ -62,17 +62,30 @@ export class triggeredFunctions {
 		const align = 'CENTER_CENTER';//アンカー
 		const x = window.innerWidth / 2;
 		const y = window.innerHeight / 2.2;
-		const frame = jsFrame.create({
-			title: 'ウィンドウ',
-			width: x*1.5,
-			height: y*1.5,
-			movable: true,//マウスで移動可能
-			resizable: true,//マウスでリサイズ可能
-			url: 'https://voice-doujin.space/vr/stage/01.php',//iframe内に表示するURL
-			urlLoaded: (_frame) => { }
-		});
+		if (window.innerWidth > 640) {
+			const frame = jsFrame.create({
+				title: 'ウィンドウ',
+				width: x *0.9 ,
+				height: y * 1.5,
+				movable: true,//マウスで移動可能
+				resizable: true,//マウスでリサイズ可能
+				url: 'https://voice-doujin.space/vr/stage/01.php',//iframe内に表示するURL
+				urlLoaded: (_frame) => { }
+			});
+			frame.setPosition(x/2, y, align);
+		} else {
+			const frame = jsFrame.create({
+				title: 'ウィンドウ',
+				width: x * 1.8,
+				height: y * 1.5,
+				movable: true,//マウスで移動可能
+				resizable: true,//マウスでリサイズ可能
+				url: 'https://voice-doujin.space/vr/stage/01.php',//iframe内に表示するURL
+				urlLoaded: (_frame) => { }
+			});
+			frame.setPosition(x, y, align);
+		}
 
-		frame.setPosition(x, y, align);
 		frame.show();
 
 
