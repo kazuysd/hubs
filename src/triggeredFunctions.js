@@ -103,24 +103,8 @@ export class triggeredFunctions {
 
 
 	static stage03Click() {
-		const jsFrame = new JSFrame();
-		const align = 'CENTER_CENTER';//アンカー
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
-		const frame = jsFrame.create({
-			title: 'ウィンドウ',
-			width: x*1.5,
-			height: y*1.5,
-			movable: true,//マウスで移動可能
-			resizable: true,//マウスでリサイズ可能
-			url: 'https://voice-doujin.space/vr/stage/03.php',//iframe内に表示するURL
-			urlLoaded: (_frame) => { }
-		});
 
-		frame.setPosition(x, y, align);
-		frame.show();
-
-
+		window.open("https://voice-doujin.space/vr/stage/03.php","window1","width=150,height=300,scrollbars=1");
 
 	}
 
