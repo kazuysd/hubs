@@ -59,36 +59,42 @@ export class triggeredFunctions {
 
 	static stage01Click() {
 		const jsFrame = new JSFrame();
-		const align = 'CENTER_CENTER';//アンカー
+		const windowtitle = 'VOiCE VR'
+		//アンカー
+		const align = 'CENTER_CENTER';
+		//iframe内に表示するURL
+		const innerurl = 'https://voice-doujin.space/vr/stage/01.php';
 		const x = window.innerWidth / 2;
 		const y = window.innerHeight / 2.2;
-		if (window.innerWidth > 640) {
-			const frame = jsFrame.create({
-				title: 'ウィンドウ',
-				width: x *0.9 ,
-				height: y * 1.5,
-				movable: true,//マウスで移動可能
-				resizable: true,//マウスでリサイズ可能
-				url: 'https://voice-doujin.space/vr/stage/01.php',//iframe内に表示するURL
-				urlLoaded: (_frame) => { }
-			});
-			frame.setPosition(x/2, y, align);
+		var posx = 0;
+		var posy = 0;
+		var widthx = 0;
+		var heighty = 0;
+
+		if (x >= 320) {
+			widthx = x * 0.9;
+			heighty = y * 1.5;
+			posx = x / 2;
+			posy = y;
 		} else {
-			const frame = jsFrame.create({
-				title: 'ウィンドウ',
-				width: x * 1.8,
-				height: y * 1.5,
-				movable: true,//マウスで移動可能
-				resizable: true,//マウスでリサイズ可能
-				url: 'https://voice-doujin.space/vr/stage/01.php',//iframe内に表示するURL
-				urlLoaded: (_frame) => { }
-			});
-			frame.setPosition(x, y, align);
+			widthx = x * 1.8;
+			heighty = y * 1.5;
+			posx = x;
+			posy = y
 		}
 
+		const frame = jsFrame.create({
+			title: windowtitle,
+			width: widthx,
+			height: heighty,
+			movable: true,//マウスで移動可能
+			resizable: true,//マウスでリサイズ可能
+			url: innerurl,
+			urlLoaded: (_frame) => { }
+		});
+
+		frame.setPosition(posx, posy, align);
 		frame.show();
-
-
 
 	}
 
@@ -99,8 +105,8 @@ export class triggeredFunctions {
 		const y = window.innerHeight / 2.2;
 		const frame = jsFrame.create({
 			title: 'ウィンドウ',
-			width: x*1.5,
-			height: y*1.5,
+			width: x * 1.5,
+			height: y * 1.5,
 			movable: true,//マウスで移動可能
 			resizable: true,//マウスでリサイズ可能
 			url: 'https://voice-doujin.space/vr/stage/02.php',//iframe内に表示するURL
@@ -117,7 +123,7 @@ export class triggeredFunctions {
 
 	static stage03Click() {
 
-		window.open("https://voice-doujin.space/vr/stage/03.php","window1","width=150,height=300,scrollbars=1");
+		window.open("https://voice-doujin.space/vr/stage/03.php", "window1", "width=150,height=300,scrollbars=1");
 
 	}
 
@@ -128,8 +134,8 @@ export class triggeredFunctions {
 		const y = window.innerHeight / 2.2;
 		const frame = jsFrame.create({
 			title: 'ウィンドウ',
-			width: x*1.5,
-			height: y*1.5,
+			width: x * 1.5,
+			height: y * 1.5,
 			movable: true,//マウスで移動可能
 			resizable: true,//マウスでリサイズ可能
 			url: 'https://voice-doujin.space/vr/stage/04.php',//iframe内に表示するURL
@@ -149,8 +155,8 @@ export class triggeredFunctions {
 		const y = window.innerHeight / 2.2;
 		const frame = jsFrame.create({
 			title: 'ウィンドウ',
-			width: x*1.5,
-			height: y*1.5,
+			width: x * 1.5,
+			height: y * 1.5,
 			movable: true,//マウスで移動可能
 			resizable: true,//マウスでリサイズ可能
 			url: 'https://voice-doujin.space/vr/stage/05.php',//iframe内に表示するURL
