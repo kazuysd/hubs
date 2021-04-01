@@ -59,7 +59,7 @@ export class triggeredFunctions {
 
 	static stage01Click() {
 		const jsFrame = new JSFrame();
-		const windowtitle = 'VOiCE VR'
+		const windowtitle = 'VOiCE VR';
 		//アンカー
 		const align = 'CENTER_CENTER';
 		//iframe内に表示するURL
@@ -80,7 +80,7 @@ export class triggeredFunctions {
 			widthx = x * 1.8;
 			heighty = y * 1.5;
 			posx = x;
-			posy = y
+			posy = y;
 		}
 
 		const frame = jsFrame.create({
