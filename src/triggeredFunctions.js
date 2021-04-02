@@ -110,13 +110,13 @@ export class triggeredFunctions {
 		// -------------------------------------------------------------
 
 	
-		var wH = argDispOrHtml == "HTML" ? document.documentElement.clientHeight : screen.availHeight;
+		var wH = screen.availHeight;
 	    wH = Math.floor(wH / 2); 
 		if (wH < 100) {
 			wH= 100;
 		}
 
-		var wW = argDispOrHtml == "HTML" ? document.documentElement.clientWidth : screen.availWidth;
+		var wW = screen.availWidth;
 		wW = Math.floor(wH / 3);
 		if (wW < 100) {
 			wW= 100;
