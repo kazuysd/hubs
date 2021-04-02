@@ -105,34 +105,37 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/02.php'; // 別タブ遷移したいURL
 
-		// -------------------------------------------------------------
-		// この「cman_winOpen()」を使用すると、指定の画面が表示されます 
-		// -------------------------------------------------------------
+		const x = window.innerWidth / 2;
+		const y = window.innerHeight / 2.2;
+		var posx = 0;
+		var posy = 0;
+		var widthx = 0;
+		var heighty = 0;
 
+		if (x >= 320) {
+			widthx = x * 0.9;
+			heighty = y * 1.5;
+			posx = x / 2;
+			posy = y;
+		} else {
+			widthx = x * 1.8;
+			heighty = y * 1.5;
+			posx = x;
+			posy = y;
+		}
 	
-		var wH = screen.availHeight;
-	    wH = Math.floor(wH / 2); 
-		if (wH < 100) {
-			wH= 100;
-		}
-
-		var wW = screen.availWidth;
-		wW = Math.floor(wH / 3);
-		if (wW < 100) {
-			wW= 100;
-		}
 
 		var wT = wH /2;
 		var wL = wW /2;  // モニター中央 Left計算
-		var wOption = "top=" + wT + ", left=" + wL + ", height=" + wH + ", width=" + wW + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
+		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
 		// 画面を開く
 		var winObj = window.open(LINK, "_blank", wOption);
 		winObj.focus();
 
 		try {
-			winObj.resizeTo(wW, wH);
-			winObj.moveTo(wL, wT);
+			winObj.resizeTo(widthx, heighty);
+			winObj.moveTo(posx, posy);
 		} catch (e) {
 		}
 
