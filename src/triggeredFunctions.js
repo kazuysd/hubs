@@ -136,7 +136,7 @@ export class triggeredFunctions {
 		} catch (e) {
 		}
 
-		delete winObj;
+	
 
 
 	}
