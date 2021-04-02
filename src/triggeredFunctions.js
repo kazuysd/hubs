@@ -124,9 +124,6 @@ export class triggeredFunctions {
 			posy = y;
 		}
 	
-
-		var wT = wH /2;
-		var wL = wW /2;  // モニター中央 Left計算
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
 		// 画面を開く
