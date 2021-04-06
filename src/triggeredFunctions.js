@@ -394,24 +394,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/01.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
@@ -434,24 +436,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/02.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
@@ -474,24 +478,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/03.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
@@ -514,24 +520,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/04.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
@@ -554,24 +562,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/05.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
@@ -595,24 +605,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/06.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
@@ -635,24 +647,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/07.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
@@ -676,24 +690,26 @@ export class triggeredFunctions {
 
 		const LINK = 'https://voice-doujin.space/vr/stage/08.php'; // 別タブ遷移したいURL
 
-		const x = window.innerWidth / 2;
-		const y = window.innerHeight / 2.2;
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
 		var posx = 0;
 		var posy = 0;
 		var widthx = 0;
 		var heighty = 0;
 
-		if (x >= 320) {
-			widthx = x * 0.9;
-			heighty = y * 1;
-			posx = x / 2;
-			posy = y;
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
 		} else {
-			widthx = x * 1.8;
-			heighty = y * 1;
-			posx = x;
-			posy = y;
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
 		}
+	
 	
 		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
 
