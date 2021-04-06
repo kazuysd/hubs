@@ -730,5 +730,51 @@ export class triggeredFunctions {
 
 
 
+	static normal01Click() {
+
+		const LINK = 'https://voice-doujin.space/vr/normal/01.php'; // 別タブ遷移したいURL
+
+
+		const x = window.innerWidth;
+		const y = window.innerHeight;
+		var posx = 0;
+		var posy = 0;
+		var widthx = 0;
+		var heighty = 0;
+
+		if (x >= 640) {
+			widthx = x * 0.5;
+			heighty = y * 0.9;
+			posx = x /8;
+			posy = y /8;
+		} else {
+			widthx = x * 0.9;
+			heighty = y * 0.9;
+			posx = x /10;
+			posy = y /10;
+		}
+	
+	
+		var wOption = "top=" + posy + ", left=" + posx + ", height=" + heighty + ", width=" + widthx + ", menubar=no" + ", toolbar=no" + ", location=no" + ", status=no" + ", resizable=yes" + ", scrollbars=yes" + ", directories=no";
+
+		// 画面を開く
+		var winObj = window.open(LINK, "_blank", wOption);
+		winObj.focus();
+
+		try {
+			winObj.resizeTo(widthx, heighty);
+			winObj.moveTo(posx, posy);
+		} catch (e) {
+		}
+
+	
+
+
+	}
+
+
+
+
+	
 
 }

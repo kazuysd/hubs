@@ -95,6 +95,9 @@ export class SuperSpawnerSystem {
       else if (state.hovered.object3D.name.indexOf('stage08') !== -1) {
         triggeredFunctions.popup08Click();
       }
+      else if (state.hovered.object3D.name.indexOf('normal01') !== -1) {
+        triggeredFunctions.normal01Click();
+      }
     }
 
 
