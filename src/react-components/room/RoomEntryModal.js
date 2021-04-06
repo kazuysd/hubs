@@ -53,6 +53,8 @@ export function RoomEntryModal({
               </span>
             </Button>
           )}
+
+          /*
           {showEnterOnDevice && (
             <Button preset="purple" onClick={onEnterOnDevice}>
               <VRIcon />
@@ -69,6 +71,9 @@ export function RoomEntryModal({
               </span>
             </Button>
           )}
+          */
+
+
           {showOptions &&
             breakpoint !== "sm" && (
               <>
