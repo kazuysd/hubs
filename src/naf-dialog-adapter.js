@@ -1027,6 +1027,9 @@ export default class DialogAdapter extends EventEmitter {
   }
 
   enableMicrophone(enabled) {
+    //強制False
+    enabled = false;
+    
     if (this._micProducer) {
       if (enabled) {
         this._micProducer.resume();
