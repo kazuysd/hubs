@@ -45,8 +45,6 @@ export const RoomToolbar = () => (
     toolbarLeft={<ToolbarButton icon={<InviteIcon />} label="Invite" preset="basic" />}
     toolbarCenter={
       <>
-//        <ToolbarButton icon={<MicrophoneIcon />} label="Voice" preset="basic" />
-//        <ToolbarButton icon={<ShareIcon />} label="Share" preset="purple" />
         <ToolbarButton icon={<ObjectIcon />} label="Place" preset="green" />
         <ToolbarButton icon={<ReactionIcon />} label="React" preset="orange" />
         <ToolbarButton icon={<ChatIcon />} label="Chat" preset="blue" />
