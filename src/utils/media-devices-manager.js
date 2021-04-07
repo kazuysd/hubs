@@ -96,9 +96,9 @@ export default class MediaDevicesManager {
   async fetchMediaDevices() {
     return new Promise(resolve => {
       navigator.mediaDevices.enumerateDevices().then(mediaDevices => {
-        this.micDevices = mediaDevices
-          .filter(d => d.kind === "audioinput")
-          .map(d => ({ value: d.deviceId, label: d.label || `Mic Device (${d.deviceId.substr(0, 9)})` }));
+//        this.micDevices = mediaDevices
+//          .filter(d => d.kind === "audioinput")
+//          .map(d => ({ value: d.deviceId, label: d.label || `Mic Device (${d.deviceId.substr(0, 9)})` }));
         this.videoDevices = mediaDevices
           .filter(d => d.kind === "videoinput")
           .map(d => ({ value: d.deviceId, label: d.label || `Camera Device (${d.deviceId.substr(0, 9)})` }));
