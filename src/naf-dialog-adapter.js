@@ -56,7 +56,7 @@ export default class DialogAdapter extends EventEmitter {
     this._consumers = new Map();
     this._frozenUpdates = new Map();
     this._pendingMediaRequests = new Map();
-    this._micEnabled = true;
+    this._micEnabled = false;
     this._initialAudioConsumerPromise = null;
     this._initialAudioConsumerResolvers = new Map();
     this._serverTimeRequests = 0;
