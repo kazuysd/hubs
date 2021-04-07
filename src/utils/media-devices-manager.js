@@ -165,6 +165,10 @@ export default class MediaDevicesManager {
     }
 
     try {
+
+      //強制false
+      return false;
+
       const newStream = await navigator.mediaDevices.getUserMedia(constraints);
       this.audioSystem.addStreamToOutboundAudio("microphone", newStream);
       this.audioTrack = newStream.getAudioTracks()[0];
@@ -222,7 +226,7 @@ export default class MediaDevicesManager {
       if (isDisplayMedia) {
         newStream = await navigator.mediaDevices.getDisplayMedia(constraints);
       } else {
-        newStream = await navigator.mediaDevices.getUserMedia(constraints);
+ //       newStream = await navigator.mediaDevices.getUserMedia(constraints);
       }
 
       const videoTracks = newStream ? newStream.getVideoTracks() : [];
