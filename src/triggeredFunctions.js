@@ -64,7 +64,7 @@ export class triggeredFunctions {
 		//アンカー
 		const align = 'CENTER_CENTER';
 		//iframe内に表示するURL
-		const innerurl = 'https://voice-doujin.space/vr/inner/'+numberStr+'.php';
+		const innerurl = 'https://voice-doujin.space/vr/inner/nn.php?config=inner'+numberStr;
 		const x = window.innerWidth / 2;
 		const y = window.innerHeight / 2.2;
 		var posx = 0;
