@@ -55,7 +55,11 @@ export class SuperSpawnerSystem {
         var numberStr = state.hovered.object3D.name.substring(target+5, target+7);
         triggeredFunctions.innerFrameNumClick(numberStr);
       }
-
+      else if (state.hovered.object3D.name.indexOf('stage') !== -1) {
+        var target = state.hovered.object3D.name.indexOf('stage');
+        var numberStr = state.hovered.object3D.name.substring(target+5, target+7);
+        triggeredFunctions.innerFrameNumClick(numberStr);
+      }
       else if (state.hovered.object3D.name.indexOf('inner01') !== -1) {
         triggeredFunctions.innerFrame01Click();
       }
