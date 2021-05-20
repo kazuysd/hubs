@@ -58,6 +58,47 @@ export class triggeredFunctions {
 
 
 
+	static innerFrameNumClick(numberStr) {
+		const jsFrame = new JSFrame();
+		const windowtitle = 'VOiCE VR';
+		//アンカー
+		const align = 'CENTER_CENTER';
+		//iframe内に表示するURL
+		const innerurl = 'https://voice-doujin.space/vr/inner/'+numberStr+'.php';
+		const x = window.innerWidth / 2;
+		const y = window.innerHeight / 2.2;
+		var posx = 0;
+		var posy = 0;
+		var widthx = 0;
+		var heighty = 0;
+
+		if (x >= 320) {
+			widthx = x * 0.9;
+			heighty = y * 1.5;
+			posx = x / 2;
+			posy = y;
+		} else {
+			widthx = x * 1.8;
+			heighty = y * 1.5;
+			posx = x;
+			posy = y;
+		}
+
+		const frame = jsFrame.create({
+			title: windowtitle,
+			width: widthx,
+			height: heighty,
+			movable: true,//マウスで移動可能
+			resizable: true,//マウスでリサイズ可能
+			url: innerurl,
+			urlLoaded: (_frame) => { }
+		});
+
+		frame.setPosition(posx, posy, align);
+		frame.show();
+
+	}
+
 
 
 	static innerFrame01Click() {

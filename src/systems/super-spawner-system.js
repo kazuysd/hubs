@@ -47,7 +47,16 @@ export class SuperSpawnerSystem {
       isScriptTrigger
     ) {
       // trigger function
-      if (state.hovered.object3D.name.indexOf('inner01') !== -1) {
+
+
+
+      if (state.hovered.object3D.name.indexOf('inner') !== -1) {
+        var target = state.hovered.object3D.name.indexOf('inner');
+        var numberStr = state.hovered.object3D.name.substring(target+5, target+7);
+        triggeredFunctions.innerFrameNumClick(numberStr);
+      }
+
+      else if (state.hovered.object3D.name.indexOf('inner01') !== -1) {
         triggeredFunctions.innerFrame01Click();
       }
       else if (state.hovered.object3D.name.indexOf('inner02') !== -1) {
